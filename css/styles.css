@@ -1,0 +1,284 @@
+body {
+	font-size: 16px;
+	min-width: 320px;
+	position: relative;
+	line-height: 1.6;
+	font-family: "Oswald", sans-serif;
+	overflow-x: hidden;
+}
+
+ul {
+	padding-left: 0; 
+}
+
+.hidden {
+	display: none;
+}
+
+.clearfix:after {
+	content: " ",
+	display: table;
+	clear: both;
+}
+
+.top-line {
+	position: absolute;
+	z-index: 999;
+	right: 0;
+	left: 0;
+	background-color: rgba(19,19,22,.3);
+	min-height: 100px;
+	padding-top: 20px;
+	color: white;
+	font-family: "Oswald";
+	font-weight: bold;
+}
+
+.top-line ul {
+	padding-top: 17px;
+}
+
+.top-line ul a {
+	color: white;
+}
+
+.top-line ul li :hover {
+	text-decoration: none; 
+	color: #ffe600;
+}
+
+.top-line ul li {
+	display: inline-block;
+	font-size: 14px;
+	margin-right: 20px;
+	text-transform: uppercase;
+}
+
+.logo {
+	padding-left: 43px;
+	background-image: url(../images/logo.png);
+	background-repeat: no-repeat;
+	background-position: center left;
+	min-height: 60px;
+	position: relative;
+}
+
+.logo .title {
+	display: block;
+	font-size: 30px;
+	text-transform: uppercase;
+	position: absolute;
+	bottom: 1px;
+}
+
+.logo .subtitle {
+	font-size: 9px;
+	text-transform: uppercase;
+	letter-spacing: 8px;
+	position: absolute;
+	bottom: 0;
+}
+
+.slider {
+		height: 1050px;
+		position: relative;
+}
+
+.slider img {
+	position: relative;
+	z-index: -1;
+}
+
+.hero {
+	position: absolute;
+	top: 390px;
+	left: 0;
+	right: 0;
+	min-height: 370px;
+	background-color: rgba(19,19,22,.3);
+	text-align: center;
+}
+
+.hero h1 {
+	margin: 1em 0 .6em 0;
+	font: bold 65px "Oswald";
+	color: white;
+	line-height: 1.2;
+}
+
+.hero button {
+	font: bold 20px "Oswald";
+	background-color: #ffe600;
+	border: 0;
+	padding: 15px 50px 15px 50px;
+	text-transform: uppercase;
+}
+
+.hero .arrow {
+	margin-top: 15%;
+}
+
+.hero .arrow:hover {
+	cursor: pointer;
+}
+
+.services {
+	min-height: 590px;
+	background-color: #fbfbfb;
+	position: relative;
+	text-align: center;
+	padding-top: 60px;
+}
+
+.lineafter {
+	font: bold 30px "Oswald";
+}
+
+.lineafter:after {
+	position: absolute;
+	content: '';
+	height: 4px;
+	width: 170px;
+	background-color: #ffe600;
+	display: block;
+	top: 125px;
+	left: 50%;
+	transform: translate(-50%, 0);
+}
+
+.services p {
+	font: lighter 16px "Oswald";
+}
+
+.desc p {
+	padding-top: 40px;
+}
+
+.desc h3 {
+	font: 16px "Oswald";
+}
+
+.services .item {
+	padding-top: 40px;
+}
+
+.services .item h3 {
+	font: bold 20px "Oswald";
+}
+
+.howwedoit {
+	min-height: 465px;
+	background-color: #131a1d;
+	text-align: center;
+	padding-top: 60px;
+}
+
+.howwedoit p {
+	font: lighter 16px "Oswald";
+	color: white;
+}
+
+.howwedoit h2 {
+	font: bold 30px "Oswald";
+	color: #ffe600;
+}
+
+.howwedoit .item h3 {
+	font: bold 20px "Oswald";
+	color: white;
+}
+
+.howwedoit .item {
+	padding-top: 55px;
+}
+
+.portfolio {
+	min-height: 900px;
+	position: relative;
+	text-align: center;
+	padding-top: 60px;
+}
+
+.portfolio ul {
+	padding-top: 55px;
+}
+
+.portfolio p {
+	font: lighter 16px "Oswald";
+}
+
+.portfolio ul li {
+	display: inline-block;
+	font-size: 16px;
+	margin-right: 20px;
+}
+
+.portfolio ul a {
+	text-decoration: none;
+	color: black;
+}
+.portfolio ul a:hover {
+	text-decoration: none;
+	color: #ffe600;
+}
+
+.works {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.doyoulike {
+	min-height: 450px;
+	padding-top: 60px;
+}
+
+.doyoulike h2 {
+	padding-top: 40px;
+	font: bold 30px "Oswald";
+}
+
+.doyoulike p {
+	padding-top: 5px;
+	padding-bottom: 50px;
+}
+
+.doyoulike button {
+	font: bold 20px "Oswald";
+	background-color: #ffe600;
+	border: 0;
+	padding: 15px 50px 15px 50px;
+	color: white;
+}
+
+.proud {
+	background-color: #131a1d;
+	min-height: 400px;
+	padding-top: 50px;
+	color: white;
+}
+
+.proud h2{
+	font: bold 30px "Oswald";
+}
+
+.proud p {
+	padding-bottom: 50px; 
+}
+
+.rectangle {
+	height: 140px;
+	width: 270px;
+	border: 1px solid #ffe600;
+	padding-top: 25px;
+}
+
+.rectangle .number {
+	font: bold 40px "Oswald";
+}
+
+.rectangle .sign {
+	font: 16px "Oswald";
+	color: #ffe600;
+	margin-top: 5px;
+}
