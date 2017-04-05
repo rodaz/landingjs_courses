@@ -16,10 +16,16 @@ ul {
 }
 
 .clearfix:after {
-	content: " ",
+	content: " ";
 	display: table;
 	clear: both;
 }
+
+/*
+padding -botton section 45px
+p font lighter 16 oswald
+h2 bold 30 oswald
+*/
 
 .top-line {
 	position: absolute;
@@ -30,7 +36,7 @@ ul {
 	min-height: 100px;
 	padding-top: 20px;
 	color: white;
-	font-family: "Oswald";
+	font-family: "Oswald", sans-serif;
 	font-weight: bold;
 }
 
@@ -56,9 +62,7 @@ ul {
 
 .logo {
 	padding-left: 43px;
-	background-image: url(../images/logo.png);
-	background-repeat: no-repeat;
-	background-position: center left;
+	background: url(../images/logo.png) no-repeat center left;
 	min-height: 60px;
 	position: relative;
 }
@@ -215,7 +219,7 @@ ul {
 
 .portfolio ul a {
 	text-decoration: none;
-	color: black;
+	color: #515151;
 }
 .portfolio ul a:hover {
 	text-decoration: none;
@@ -282,3 +286,99 @@ ul {
 	color: #ffe600;
 	margin-top: 5px;
 }
+
+.whoweare {
+	min-height: 715px;
+  padding-top: 100px;
+  padding-bottom: 50px;
+  text-align: center;
+}
+
+.whoweare p {
+  font: lighter 16px "Oswald";
+}
+.whoweare .line {
+  padding-top: 50px;
+}
+
+.whoweare .service .title {
+  text-align: left;
+}
+
+.whoweare .service .title h3 {
+  font-size: 16px;
+  margin-top: 0;
+}
+
+.whoweare .desc p{
+  padding-bottom: 50px;
+}
+
+.team {
+  min-height: 590px;
+  background-color: #fbfbfb;
+  text-align: center;
+  padding-top: 50px;
+}
+
+.team p {
+  font: lighter 16px "Oswald";
+  padding-bottom: 50px;
+}
+
+.team h2 {
+  margin-bottom: 20px;
+}
+
+.team img {
+  max-width: 100%;
+}
+
+.team .card {
+  min-height: 330px;
+  background-color: white;
+  box-shadow: 0 2px #dfe4e5;
+}
+
+.team .card h3 {
+  font-size: 20px;
+  color: #ffe600;
+}
+
+.team .card .post {
+  font-size: 16px;
+  color: #707070;
+}
+
+.expand {
+  min-height: 300px;
+  background-color: #131316;
+  padding-top: 40px;
+  color: white;
+}
+
+.expand h3 {
+  display: inline-block;
+  color: #ffe600;
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+.expand p {
+  font-size: 16px;
+  font-weight: lighter;
+  margin-bottom: 20px;
+}
+
+.expand .xIcon {
+  margin-left: 85%;
+}
+
+.expand .twIcon {
+  margin-right: 20px;
+}
+
+.skills {
+  min-height: 445px;
+}
+
