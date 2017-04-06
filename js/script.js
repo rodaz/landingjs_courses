@@ -32,13 +32,21 @@ $(document).ready(function () {
         cnt4+=1;
     },24);
   //////////////////////////////////////////////////////////////
-
+/*
   $('.slider').css("background", "url(images/slider/bg.jpg) no-repeat");
   setTimeout(function () {
     $('.slider').css("background", "url(images/slider/bg1.jpg) no-repeat");
   }, 3000);
 
+*/
 
+    $('a[href^="#"').on('click', function() {
+        var target = $(this).attr('href'),
+        _top = $(target).offset().top - 100;
+
+        $('body, html').animate({scrollTop: _top}, 900);
+        return false;
+    });
 });
 
 function rotate(element, degree) {

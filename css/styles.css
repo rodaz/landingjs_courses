@@ -11,19 +11,11 @@ ul {
 	padding-left: 0; 
 }
 
-.hidden {
-	display: none;
-}
-
 /*
 padding -botton section 45px
 p font lighter 16 oswald
 h2 bold 30 oswald
 */
-.slider {
-  transition: 1s;
-}
-
 
 p {
   font-size: 16px;
@@ -36,8 +28,8 @@ h2 {
 }
 
 .top-line {
-	position: absolute;
-	z-index: 99;
+	position: fixed;
+	z-index: 9;
 	right: 0;
 	left: 0;
 	background-color: rgba(19,19,22,.3);
@@ -50,6 +42,7 @@ h2 {
 
 .top-line ul {
 	padding-top: 17px;
+	text-align: center;
 }
 
 .top-line ul a {
@@ -92,28 +85,16 @@ h2 {
 }
 
 .slider {
-		min-height: 1138px;
-		position: relative;
-}
-
-.slider img {
-	position: relative;
-	z-index: -1;
-}
-
-.slider .arrow img:hover {
-  cursor: pointer;
+	background: url(../images/slider/bg.jpg) no-repeat;
+	min-height: 1138px;
+	padding-top: 390px;
+	transition: 1s;
 }
 
 .hero {
-	position: absolute;
-	top: 390px;
-	left: 0;
-	right: 0;
 	min-height: 370px;
 	background-color: rgba(19,19,22,.3);
 	text-align: center;
-  z-index: 10;
 }
 
 .hero h1 {
@@ -132,12 +113,12 @@ h2 {
 }
 
 .hero .arrow {
-	margin-top: 15%;
+	margin-top: 175px;
 }
 
-/*.hero .arrow:hover {*/
-	/*cursor: pointer;*/
-/*}*/
+.hero .arrow:hover {
+  cursor: pointer;
+}
 
 .services {
 	min-height: 590px;
@@ -264,9 +245,14 @@ h2 {
 	padding-bottom: 50px; 
 }
 
+.proud h2 {
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+
 .rectangle {
 	height: 140px;
-	width: 270px;
+	width: 100%;
 	border: 1px solid #ffe600;
 	padding-top: 25px;
 }
