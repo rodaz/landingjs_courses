@@ -15,21 +15,29 @@ ul {
 	display: none;
 }
 
-.clearfix:after {
-	content: " ";
-	display: table;
-	clear: both;
-}
-
 /*
 padding -botton section 45px
 p font lighter 16 oswald
 h2 bold 30 oswald
 */
+.slider {
+  transition: 1s;
+}
+
+
+p {
+  font-size: 16px;
+  font-weight: lighter;
+}
+
+h2 {
+  font-size: 30px;
+  font-weight: bold;
+}
 
 .top-line {
 	position: absolute;
-	z-index: 999;
+	z-index: 99;
 	right: 0;
 	left: 0;
 	background-color: rgba(19,19,22,.3);
@@ -84,13 +92,17 @@ h2 bold 30 oswald
 }
 
 .slider {
-		height: 1050px;
+		min-height: 1138px;
 		position: relative;
 }
 
 .slider img {
 	position: relative;
 	z-index: -1;
+}
+
+.slider .arrow img:hover {
+  cursor: pointer;
 }
 
 .hero {
@@ -101,6 +113,7 @@ h2 bold 30 oswald
 	min-height: 370px;
 	background-color: rgba(19,19,22,.3);
 	text-align: center;
+  z-index: 10;
 }
 
 .hero h1 {
@@ -122,36 +135,27 @@ h2 bold 30 oswald
 	margin-top: 15%;
 }
 
-.hero .arrow:hover {
-	cursor: pointer;
-}
+/*.hero .arrow:hover {*/
+	/*cursor: pointer;*/
+/*}*/
 
 .services {
 	min-height: 590px;
 	background-color: #fbfbfb;
 	position: relative;
 	text-align: center;
-	padding-top: 60px;
+	padding-top: 40px;
 }
-
-.lineafter {
-	font: bold 30px "Oswald";
-}
-
-.lineafter:after {
+.lineafter::after {
 	position: absolute;
 	content: '';
-	height: 4px;
+	height: 3px;
 	width: 170px;
 	background-color: #ffe600;
 	display: block;
-	top: 125px;
+	top: 120px;
 	left: 50%;
 	transform: translate(-50%, 0);
-}
-
-.services p {
-	font: lighter 16px "Oswald";
 }
 
 .desc p {
@@ -174,16 +178,14 @@ h2 bold 30 oswald
 	min-height: 465px;
 	background-color: #131a1d;
 	text-align: center;
-	padding-top: 60px;
+	padding-top: 40px;
 }
 
 .howwedoit p {
-	font: lighter 16px "Oswald";
 	color: white;
 }
 
 .howwedoit h2 {
-	font: bold 30px "Oswald";
 	color: #ffe600;
 }
 
@@ -200,15 +202,11 @@ h2 bold 30 oswald
 	min-height: 900px;
 	position: relative;
 	text-align: center;
-	padding-top: 60px;
+	padding-top: 45px;
 }
 
 .portfolio ul {
 	padding-top: 55px;
-}
-
-.portfolio p {
-	font: lighter 16px "Oswald";
 }
 
 .portfolio ul li {
@@ -227,6 +225,7 @@ h2 bold 30 oswald
 }
 
 .works {
+  padding-top: 55px;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
@@ -239,7 +238,6 @@ h2 bold 30 oswald
 
 .doyoulike h2 {
 	padding-top: 40px;
-	font: bold 30px "Oswald";
 }
 
 .doyoulike p {
@@ -260,10 +258,6 @@ h2 bold 30 oswald
 	min-height: 400px;
 	padding-top: 50px;
 	color: white;
-}
-
-.proud h2{
-	font: bold 30px "Oswald";
 }
 
 .proud p {
@@ -293,10 +287,6 @@ h2 bold 30 oswald
   padding-bottom: 50px;
   text-align: center;
 }
-
-.whoweare p {
-  font: lighter 16px "Oswald";
-}
 .whoweare .line {
   padding-top: 50px;
 }
@@ -322,7 +312,6 @@ h2 bold 30 oswald
 }
 
 .team p {
-  font: lighter 16px "Oswald";
   padding-bottom: 50px;
 }
 
@@ -365,8 +354,6 @@ h2 bold 30 oswald
 }
 
 .expand p {
-  font-size: 16px;
-  font-weight: lighter;
   margin-bottom: 20px;
 }
 
@@ -386,13 +373,8 @@ h2 bold 30 oswald
   text-align: center;
 }
 
-.skills h2 {
-	font-weight: bold;
-}
-
 .skills p {
-	font-size: 16px;
-  font-weight: lighter;
+  padding-top: 5px;
   padding-bottom: 40px;
 }
 
@@ -464,9 +446,147 @@ h2 bold 30 oswald
 
 .clients {
 	min-height: 550px;
+	text-align: center;
+	padding-top: 40px;
+}
+
+.clients p {
+  padding-bottom: 80px;
+}
+
+.clients .arrows {
+  padding-top: 60px;
+}
+
+.clients .leftArrow {
+  margin-right: 30px;
 }
 
 .reviews {
 	min-height: 300px;
-	background-color: #fbfbfb;
+	background-color: #131a1d;
+  padding-top: 60px;
+  color: white;
+  text-align: center;
+}
+
+.reviews .lineafter::after {
+  top: 105px;
+}
+
+.reviews .quote {
+  font-size: 20px;
+  line-height: 1.3;
+  font-weight: normal;
+  padding-bottom: 40px;
+}
+
+.reviews .autor {
+  font-size: 16px;
+  font-weight: normal;
+}
+.reviews img {
+  margin-right: 3px;
+}
+
+.contact {
+  min-height: 500px;
+  padding-top: 40px;
+  background-color: #fbfbfb;
+  text-align: center;
+}
+
+.contact .desc p {
+  padding-bottom: 55px;
+}
+
+.contact .item h3,
+.contact .item p {
+  font-size: 20px;
+}
+
+.contact .item h3 {
+  margin-bottom: 20px;
+}
+
+.message {
+  min-height: 660px;
+  background-color: #131a1d;
+  padding-top: 40px;
+  color: white;
+  text-align: center;
+}
+
+.message p {
+  padding-bottom: 50px;
+  padding-top: 10px;
+}
+
+.message input {
+  background-color: inherit;
+  border: 1px solid white;
+  min-height: 60px;
+  width: 100%;
+  padding: 15px;
+}
+:-ms-input-placeholder {
+  color: white;
+  font-size: 15px;
+  font-weight: lighter;
+}
+::-webkit-input-placeholder {
+  color: white;
+  font-size: 15px;
+  font-weight: lighter;
+}
+::-moz-placeholder {
+  color: white;
+  font-size: 15px;
+  font-weight: lighter;
+}
+
+.message textarea {
+  min-height: 220px;
+  margin-top: 30px;
+  background-color: inherit;
+  border: 1px solid white;
+  width: 100%;
+  padding: 15px;
+}
+
+.message button {
+  font: bold 15px "Oswald";
+  background-color: #ffe600;
+  border: 0;
+  padding: 15px 50px 15px 50px;
+  color: #131a1d;
+  margin-top: 30px;
+}
+
+footer {
+  padding-top: 25px;
+  min-height: 180px;
+  background-color: #131316;
+  text-align: center;
+  color: white;
+}
+
+footer .smak {
+  color: #ffe600;
+}
+
+footer p {
+  padding-bottom: 7px;
+}
+
+footer .icons {
+  margin-right: 7px;
+  margin-left: 7px;
+}
+
+footer button {
+  background-color: #ffe600;
+  margin-top: 30px;
+  border: 0;
+  padding: 17px 19px;
 }

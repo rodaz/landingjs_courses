@@ -30,7 +30,14 @@ $(document).ready(function () {
         if(cnt4 == 94) clearInterval(timer4);
         progressBarUpdate(cnt4, 100, pie4);
         cnt4+=1;
-    },24);     
+    },24);
+  //////////////////////////////////////////////////////////////
+
+  $('.slider').css("background", "url(images/slider/bg.jpg) no-repeat");
+  setTimeout(function () {
+    $('.slider').css("background", "url(images/slider/bg1.jpg) no-repeat");
+  }, 3000);
+
 
 });
 
