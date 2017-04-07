@@ -31,23 +31,94 @@ $(document).ready(function () {
         progressBarUpdate(cnt4, 100, pie4);
         cnt4+=1;
     },24);
-  //////////////////////////////////////////////////////////////
-/*
-  $('.slider').css("background", "url(images/slider/bg.jpg) no-repeat");
-  setTimeout(function () {
-    $('.slider').css("background", "url(images/slider/bg1.jpg) no-repeat");
-  }, 3000);
 
-*/
+  //Slider 1
+  var slideNumber = 1;
+  var slideTimer1;
+  var text = [
+    'BRANDING HAVE ANOTHER <br> DEFINITION',
+    'CLOSER HAS OTHER <br> CHARACTER',
+    'LOREMQ DID THRONE <br> FUNCTION'
+  ];
 
-    $('a[href^="#"').on('click', function() {
+  var mainSlider = function() {
+    slideNumber === 3 ? slideNumber = 1 : slideNumber++;
+    $('.slider').css("background", "url(images/slider/bg"+slideNumber+".jpg) no-repeat");
+    $('.slider h1').html(text[slideNumber-1]);
+  };
+
+  var slider1 = setInterval(mainSlider, 3000);
+
+  $('#mainSliderLeft').on('click', function () {
+    if (slideTimer1) {
+      clearTimeout(slideTimer1);
+    }
+    clearInterval(slider1);
+    slideNumber === 1 ? slideNumber = 3 : slideNumber--;
+    $('.slider').css("background", "url(images/slider/bg"+slideNumber+".jpg) no-repeat");
+    $('.slider h1').html(text[slideNumber-1]);
+    slideTimer1 = setTimeout(function () {
+      mainSlider();
+      slider1 = setInterval(mainSlider, 3000);
+    }, 5000);
+  });
+
+  $('#mainSliderRight').on('click', function () {
+    if (slideTimer1) {
+      clearTimeout(slideTimer1);
+    }
+    clearInterval(slider1);
+    slideNumber === 3 ? slideNumber = 1 : slideNumber++;
+    $('.slider').css("background", "url(images/slider/bg"+slideNumber+".jpg) no-repeat");
+    $('.slider h1').html(text[slideNumber-1]);
+    slideTimer1 = setTimeout(function () {
+      mainSlider();
+      slider1 = setInterval(mainSlider, 3000);
+    }, 5000);
+  });
+
+  //Scroll
+
+    $('a[href^="#"]').on('click', function() {
         var target = $(this).attr('href'),
         _top = $(target).offset().top - 100;
 
         $('body, html').animate({scrollTop: _top}, 900);
         return false;
     });
-});
+
+////////////////////////////////////////////////
+
+  var servItemImg = $('.services .item img');
+  var howItemImg = $('.howwedoit .item img');
+
+  var elemWidth = parseInt(servItemImg.css('width'));
+  var elemHeight = parseInt(servItemImg.css('height'));
+  var elem1Width = parseInt(howItemImg.css('width'));
+  var elem1Height = parseInt(howItemImg.css('height'));
+
+  servItemImg.hover(
+    function(){
+      $(this).stop().animate({width: (elemWidth+elemWidth/10)+'px', height: (elemHeight+elemHeight/10)+'px'}, 400);
+
+    }, function() {
+      $(this).stop().animate({width: elemWidth+'px', height: elemHeight+'px'}, 400);
+    });
+
+    howItemImg.hover(
+      function(){
+        $(this).stop().animate({width: (elem1Width+elem1Width/10)+'px', height: (elem1Height+elem1Height/10)+'px'}, 400);
+
+      }, function() {
+        $(this).stop().animate({width: elem1Width+'px', height: elem1Height+'px'}, 400);
+      });
+
+
+  });
+
+
+
+//functions for counters
 
 function rotate(element, degree) {
     element.css({

@@ -111,10 +111,104 @@
 
 /* Extra Small Devices, Phones */ 
 @media only screen and (max-width : 480px) {
+	.top-line ul li {
+    margin-right: 7px;
+  }
+
+  .logo {
+    margin-left: 40px;
+  }
+
+  .hero h1 {
+    font-size: 45px;
+  }
+
+  .portfolio ul li {
+    margin-right: 4px;
+    /*font-size: 14px;*/
+  }
+  .team .card {
+    width: 60%;
+    margin-left: 20%;
+  }
+
+  .clients .arrows {
+    padding-top: 35px;
+  }
+
+  .clients p {
+    padding-bottom: 40px;
+  }
+
+  .reviews .lineafter::after {
+    top: 120px;
+  }
 
 }
 
 /* Custom, iPhone Retina */ 
 @media only screen and (max-width : 320px) {
+  .top-line ul li {
+    margin-right: 15px;
+  }
+  .top-line {
+    min-height: 55px;
+    padding-top: 0;
+  }
 
+  .slider {
+    padding-top: 79px;
+    min-height: 370px;
+    background-position: center;
+  }
+
+  .hero h1 {
+    font-size: 40px;
+  }
+
+  .hero button {
+    padding: 10px 37px 10px 37px;;
+  }
+
+  .hero img {
+    display: none;
+  }
+
+  .logo {
+    display: none;
+    margin-left: 0;
+  }
+
+  .doyoulike {
+    padding-bottom: 15px;
+  }
+
+  .team .card {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .clients .lineafter::after {
+    top: 130px;
+  }
+
+  .reviews {
+    padding-bottom: 15px;
+  }
+
+  .reviews .quote {
+    font-size: 18px;
+  }
+
+  .reviews .autor {
+    font-size: 14px;
+  }
+
+  .reviews .lineafter::after {
+    top: 165px;
+  }
+
+  .contact .lineafter::after {
+    top: 135px;
+  }
 }

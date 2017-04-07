@@ -85,8 +85,8 @@ h2 {
 }
 
 .slider {
-	background: url(../images/slider/bg.jpg) no-repeat;
-	min-height: 1138px;
+	background: url(../images/slider/bg1.jpg) no-repeat;
+	min-height: 1080px;
 	padding-top: 390px;
 	transition: 1s;
 }
