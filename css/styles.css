@@ -11,10 +11,6 @@ ul {
 	padding-left: 0; 
 }
 
-/*
-padding -botton section 45px
-*/
-
 p {
   font-size: 16px;
   font-weight: lighter;
@@ -23,6 +19,7 @@ p {
 h2 {
   font-size: 30px;
   font-weight: bold;
+  line-height: 37px;
 }
 
 .top-line {
@@ -46,16 +43,20 @@ h2 {
 	color: white;
 }
 
-.top-line ul li :hover {
-	text-decoration: none; 
-	color: #ffe600;
-}
-
 .top-line ul li {
 	display: inline-block;
 	font-size: 14px;
 	margin-right: 20px;
 	text-transform: uppercase;
+}
+
+.top-line ul li a:hover {
+	text-decoration: none; 
+	color: #ffe600;
+}
+
+.top-line ul li a:focus {
+	text-decoration: none; 
 }
 
 .logo {
@@ -124,6 +125,7 @@ h2 {
 	text-align: center;
 	padding-top: 40px;
 }
+
 .lineafter::after {
 	position: absolute;
 	content: '';
@@ -141,7 +143,7 @@ h2 {
 }
 
 .desc h3 {
-	font: 16px "Oswald";
+	font-size: 16px;
 }
 
 .services .item {
@@ -149,7 +151,8 @@ h2 {
 }
 
 .services .item h3 {
-	font: bold 20px "Oswald";
+	font-size: 20px;
+	font-weight: bold;
 }
 
 .howwedoit {
@@ -167,13 +170,14 @@ h2 {
 	color: #ffe600;
 }
 
-.howwedoit .item h3 {
-	font: bold 20px "Oswald";
-	color: white;
-}
-
 .howwedoit .item {
 	padding-top: 55px;
+}
+
+.howwedoit .item h3 {
+	font-size: 20px;
+	font-weight: bold;
+	color: white;
 }
 
 .portfolio {
@@ -191,6 +195,7 @@ h2 {
 	display: inline-block;
 	font-size: 16px;
 	margin-right: 20px;
+	margin-bottom: 5px;
 }
 
 .portfolio ul a {
@@ -260,7 +265,8 @@ h2 {
 }
 
 .doyoulike button {
-	font: bold 20px "Oswald";
+	font-size: 20px;
+	font-weight: bold;
 	background-color: #ffe600;
 	border: 0;
 	padding: 15px 50px 15px 50px;
@@ -291,11 +297,12 @@ h2 {
 }
 
 .rectangle .number {
-	font: bold 40px "Oswald";
+	font-size: 40px;
+	font-weight: bold;
 }
 
 .rectangle .sign {
-	font: 16px "Oswald";
+	font-size: 16px;
 	color: #ffe600;
 	margin-top: 5px;
 }
@@ -381,6 +388,7 @@ h2 {
   color: #ffe600;
   font-size: 20px;
   margin-bottom: 15px;
+  text-transform: uppercase;
 }
 
 .expand p {
@@ -413,89 +421,89 @@ h2 {
   color: #ffe600;
 }
 
-/*circle diagrams start*/
 .pie{
-    background-color:white;
-    width:144px;
-    height:144px;
-    border-radius:100%;
-    position:relative;
+    background-color: white;
+    width: 144px;
+    height: 144px;
+    border-radius: 100%;
+    position: relative;
     left: 24%;
 }
 .clip1 {
-    position:absolute;
-    top:0;
-    left:0;
-    width:144px;
-    height:144px;
-    clip:rect(0px, 72px, 144px, 0px);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 144px;
+    height: 144px;
+    clip: rect(0px, 72px, 144px, 0px);
 }
 .slice1 {
-    position:absolute;
-    width:144px;
-    height:144px;
-    clip:rect(0px, 144px, 144px, 72px);
-    border-radius:100%;
-    background-color:#ffe600;
-    transform:rotate(0);
+    position: absolute;
+    width: 144px;
+    height: 144px;
+    clip: rect(0px, 144px, 144px, 72px);
+    border-radius: 100%;
+    background-color: #ffe600;
+    transform: rotate(0);
 }
 .clip2 {
-    position:absolute;
-    top:0;
-    left:0;
-    width:144px;
-    height:144px;
-    clip:rect(0px, 144px, 144px, 72px);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 144px;
+    height: 144px;
+    clip: rect(0px, 144px, 144px, 72px);
     
 }
 .slice2 {
-    position:absolute;
-    width:144px;
-    height:144px;
-    clip:rect(0px, 72px, 144px, 0px);                                
-    border-radius:100%;
-    background-color:#ffe600;
-    transform:rotate(0);
+    position: absolute;
+    width: 144px;
+    height: 144px;
+    clip: rect(0px, 72px, 144px, 0px);                                
+    border-radius: 100%;
+    background-color: #ffe600;
+    transform: rotate(0);
 }
 .status {
-    position:absolute;
+    position: absolute;
     top: 4px;
     left: 4px;
     width: 136px;
     height: 136px;
     padding-top: 44px;
     border-radius: 100%;
-    font-size:35px;
+    font-size: 35px;
     font-weight: lighter;
-    text-align:center;
+    text-align: center;
     color: #ffe600;
-    line-height:50px;
+    line-height: 50px;
     background: #131a1d;
 }
-/*circle diagrams end*/
 
 .clients {
 	min-height: 550px;
 	text-align: center;
 	padding-top: 40px;
+	padding-bottom: 50px;
+}
+
+.clients-list {
+	padding-bottom: 50px;
 }
 
 .clients .clients-loop {
 	display: flex;
 	justify-content: center;
+	flex-wrap: wrap;
 }
 
 .clients .clients-loop .client-item {
-	width: 20%;
 	margin-right: 30px;
+	margin-bottom: 30px;
 }
 
 .clients p {
   padding-bottom: 80px;
-}
-
-.clients .arrows {
-  padding-top: 60px;
 }
 
 .clients .leftArrow {
@@ -525,6 +533,7 @@ h2 {
   font-size: 16px;
   font-weight: normal;
 }
+
 .reviews img {
   margin-right: 3px;
   cursor: pointer;
@@ -607,7 +616,8 @@ h2 {
 }
 
 .message button {
-  font: bold 15px "Oswald";
+	font-size: 15px;
+	font-weight: bold;
   background-color: #ffe600;
   border: 0;
   padding: 15px 50px 15px 50px;
@@ -641,4 +651,29 @@ footer button {
   margin-top: 30px;
   border: 0;
   padding: 17px 19px;
+}
+
+.sliderq {
+	width: 900px;
+	margin: 50px auto;
+	padding: 0 30px;
+	position: relative;
+}
+
+.slide-list {
+	position: relative;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+.slide-wrap {
+	position: relative;
+	left: 0px;
+	top: 0;
+	width: 10000px;
+}
+.slide-item {
+	width: 280px;
+	padding: 10px;
+	float: left;
 }
