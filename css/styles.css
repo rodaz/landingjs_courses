@@ -13,8 +13,6 @@ ul {
 
 /*
 padding -botton section 45px
-p font lighter 16 oswald
-h2 bold 30 oswald
 */
 
 p {
@@ -36,7 +34,6 @@ h2 {
 	min-height: 100px;
 	padding-top: 20px;
 	color: white;
-	font-family: "Oswald", sans-serif;
 	font-weight: bold;
 }
 
@@ -200,6 +197,11 @@ h2 {
 	text-decoration: none;
 	color: #515151;
 }
+
+.portfolio .active {
+	color: #ffe600;
+}
+
 .portfolio ul a:hover {
 	text-decoration: none;
 	color: #ffe600;
@@ -210,6 +212,37 @@ h2 {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
+	
+}
+
+.works-item {
+	position: relative;
+}
+
+.work-descr {
+	position: absolute;
+	top: 0;
+	left: 0;
+	opacity: 0;
+	width: 100%;
+	height: 100%;
+	padding-top: 24%;
+	text-align: center;
+	color: white;
+}
+
+.work-descr h3 {
+	font-size: 25px;
+	font-weight: bold;
+}
+
+.work-descr h4 {
+	font-size: 16px;
+}
+
+.work-descr:hover {
+	background: rgba(255, 230, 0, .4);
+	opacity: 1;
 }
 
 .doyoulike {
@@ -315,6 +348,10 @@ h2 {
   box-shadow: 0 2px #dfe4e5;
 }
 
+.team .card:hover {
+	cursor: pointer;
+}
+
 .team .card h3 {
   font-size: 20px;
   color: #ffe600;
@@ -325,11 +362,18 @@ h2 {
   color: #707070;
 }
 
+.triangle {
+	position: absolute;
+	left: 167px;
+	top: -24px;
+}
+
 .expand {
   min-height: 300px;
   background-color: #131316;
   padding-top: 40px;
   color: white;
+  position: relative;
 }
 
 .expand h3 {
@@ -436,6 +480,16 @@ h2 {
 	padding-top: 40px;
 }
 
+.clients .clients-loop {
+	display: flex;
+	justify-content: center;
+}
+
+.clients .clients-loop .client-item {
+	width: 20%;
+	margin-right: 30px;
+}
+
 .clients p {
   padding-bottom: 80px;
 }
@@ -473,6 +527,8 @@ h2 {
 }
 .reviews img {
   margin-right: 3px;
+  cursor: pointer;
+  transition: 1s;
 }
 
 .contact {
@@ -515,6 +571,7 @@ h2 {
   width: 100%;
   padding: 15px;
 }
+
 :-ms-input-placeholder {
   color: white;
   font-size: 15px;
@@ -538,6 +595,15 @@ h2 {
   border: 1px solid white;
   width: 100%;
   padding: 15px;
+}
+
+.warning {
+	border: 1px solid;
+	margin: 10px 0px;
+	padding:5px 5px 5px 5px;
+	color: #D63301;
+	background-color: #FFCCBA;
+	display: none;
 }
 
 .message button {

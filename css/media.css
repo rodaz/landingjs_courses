@@ -20,6 +20,15 @@
 	.reviews .lineafter::after {
   	top: 120px;
 	}
+
+	.clients .clients-loop {
+		justify-content: flex-start;
+		overflow: hidden;
+	}
+
+	.clients .clients-loop .client-item {
+
+	}
 }
 
 /* Small Devices, Tablets */
